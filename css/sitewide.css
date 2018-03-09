@@ -1,0 +1,380 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 0em;
+	margin-right: auto;
+	margin-bottom: 0em;
+	margin-left: auto;
+	width: 100%;
+	max-width: 1800px;
+	padding: 0em;
+}
+
+.header {
+	margin: 0em;
+		background-color:#ffffff;
+		margin-top: 0em;
+
+		height: 70em;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+	grid-template-rows: 4fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr 6fr ;
+	background: #ffffff;
+	background-border: ##0091CE;
+}
+
+video {
+  pointer-events: none;
+}
+
+img {
+	margin-top: -9.5em;
+	margin-left: 1em;
+}
+
+
+.jumper {
+    position:absolute; top: 40em;
+    position:absolute; margin-right: 11em; /* Place the button at the bottom of the page */
+    right: 32em; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: grey; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+.jumper:hover {
+    background-color: grey; /* Add a dark-grey background on hover */
+} 
+
+#down{
+	color:white;
+}
+
+p{
+	margin-top: -13em;
+	padding-left: 5em;
+	padding-right: 2em;
+	padding-top: 3em;
+
+}
+
+h1{ font-family: "Impact", sans-serif;
+    font-size: 50pt;
+    color: #ffffff;
+    margin-left: 4em;
+    margin-top: 20px;
+	}
+
+h4{ font-family: "Impact", sans-serif;
+    font-size: 20pt;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-left: 7em;
+    margin-bottom: 10px;
+
+}
+
+}
+
+h2 {
+    font-family: "Avenir", sans-serif;
+    font-size: 15pt;
+    padding-top: 2em;
+    color: grey;
+
+}
+
+h3 {
+    font-family: "Impact", sans-serif;
+    font-size: 80pt;
+    color: #0091CE;
+    margin-left: -50px;
+
+}
+
+
+.cards article {
+	background-color: ##ffffff;;
+	padding: -3em;
+	border: 3px solid #0091CE;
+    box-shadow: 10px 10px grey;
+}
+
+@media (min-width:780px){
+	
+	.cards .a {
+		margin: 0em;
+		background-color:#51ccc9;
+		grid-column: 1 / 9;
+		grid-row: : 1 / 7;
+	}
+}
+
+.cards .a{
+	background-color:#51ccc9;
+		grid-column: 1 / 9;
+
+}
+
+.cards .b{
+	background-color:#0091CE;
+		grid-column: 1 / 9;
+	height: 10em;
+    box-shadow: 0px 0px grey;
+}
+
+.cards .c{
+	background-color: ##ffffff;
+	margin: 1em;
+		grid-column: 4 / 7;
+}
+
+.cards .d{
+		margin: 1em;
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+}
+
+.cards .e{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .f{
+	background-color: ##ffffff;
+		grid-column: 5 / 8;
+		margin: 1em;
+}
+
+.cards .g{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .h{
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+		margin: 1em;
+}
+
+.cards .i{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .j{
+	background-color: ##ffffff;
+		grid-column: 5 / 8;
+		margin: 1em;
+}
+
+.cards .k{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .l{
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+		margin: 1em;
+}
+
+.cards .m{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+.cards .n{
+		margin: 1em;
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+}
+
+.cards .o{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .p{
+	background-color: ##ffffff;
+		grid-column: 5 / 8;
+		margin: 1em;
+}
+
+.cards .q{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .r{
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+		margin: 1em;
+}
+
+.cards .s{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .t{
+	background-color: ##ffffff;
+		grid-column: 5 / 8;
+		margin: 1em;
+}
+
+.cards .u{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .v{
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+		margin: 1em;
+}
+
+.cards .w{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .x{
+	background-color: ##ffffff;
+		grid-column: 5 / 8;
+		margin: 1em;
+}
+
+.cards .y{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+
+.cards .ab{
+		margin: 1em;
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+}
+
+.cards .ac{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .ad{
+	background-color: ##ffffff;
+		grid-column: 5 / 8;
+		margin: 1em;
+}
+
+.cards .af{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .ag{
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+		margin: 1em;
+}
+
+.cards .ah{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .ai{
+	background-color: ##ffffff;
+		grid-column: 5 / 8;
+		margin: 1em;
+}
+
+.cards .aj{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+
+.cards .ak{
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+		margin: 1em;
+}
+
+.cards .al{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
+.cards .am{
+		margin: 1em;
+	background-color: ##ffffff;
+		grid-column: 3 / 6;
+}
+
+.cards .an{
+	background-color: ##ffffff;
+		grid-column: 4 / 7;
+		margin: 1em;
+}
